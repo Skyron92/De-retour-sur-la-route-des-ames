@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     void Update() {
         Move();
         _timer += Time.deltaTime;
-        
     }
 
     void Move() {
