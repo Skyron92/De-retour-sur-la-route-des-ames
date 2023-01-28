@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
@@ -17,7 +14,7 @@ public class Player : MonoBehaviour
     void Update() {
         Move();
         _timer += Time.deltaTime;
-        if (_timer >= 1) _timer = 1;
+        
     }
 
     void Move() {
@@ -28,10 +25,14 @@ public class Player : MonoBehaviour
         v += Input.GetAxisRaw("Vertical");
         Vector3 move = new Vector3(h, 0, v) * Speed;
         _characterController.Move(move);
-
-        float rotationAngle = Vector3.Angle(move, Vector3.forward);
-        //if (h < 0) rotationAngle = -rotationAngle;
-        Quaternion rotation = Quaternion.Euler(0, rotationAngle, 0);
-        transform.rotation = new Quaternion(0, Mathf.Lerp(transform.rotation.y, rotation.y, _timer), 0, 0);
+        if (move != Vector3.zero) {
+            float rotationAngle = Vector3.Angle(move, Vector3.forward);
+            if (h < 0) rotationAngle = -rotationAngle;
+            Quaternion rotation = Quaternion.Euler(0, rotationAngle, 0);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _timer);
+            if (_timer >= 1) {
+                _timer = 1f;
+            }
+        }
     }
 }
