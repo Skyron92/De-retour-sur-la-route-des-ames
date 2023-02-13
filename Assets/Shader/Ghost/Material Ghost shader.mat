@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material Eyes shader
+  m_Name: Material Ghost shader
   m_Shader: {fileID: -6465566751694194690, guid: f0620589fc6800648a5e8d817a2fe070,
     type: 3}
   m_ValidKeywords: []
@@ -36,24 +36,24 @@ Material:
     m_Ints: []
     m_Floats:
     - _FloatingDistance: 1
-    - _FresnelMultiplier: 6.76
-    - _Interior_subtract: 2.16
+    - _FresnelMultiplier: 1
+    - _Interior_subtract: 3.58
     - _Position_multiplier: 7.7
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Wobble_distance: 0.5
     - _Wobble_frenquency: 5
-    - _Wobble_strenght: 10
+    - _Wobble_strenght: 4
     - _floatingFrequency: 6.66
     - _floatingValue: 39.6
     - _interiorMultiplier: 4.75
     m_Colors:
-    - _Border_color: {r: 0, g: 0, b: 0, a: 1}
+    - _Border_color: {r: 0.49591056, g: 3.0038016, b: 2.4714, a: 0}
     - _FResnelColor: {r: 0, g: 1.319508, b: 1.0866536, a: 0}
     - _FloatinfLerp: {r: 0.03, g: 0.03, b: 0.03, a: 0}
     - _Interior_colo: {r: 0.0017331049, g: 0.04263438, b: 0.03847493, a: 0}
-    - _Interior_color: {r: 102.75575, g: 102.75575, b: 102.75575, a: 1}
-    - _Interior_position: {r: 0, g: 0, b: 0, a: 0}
+    - _Interior_color: {r: 0, g: 0.56640524, b: 0.6320754, a: 1}
+    - _Interior_position: {r: 0, g: 0.3, b: 0, a: 0}
     - _Lerp_value: {r: 0.05, g: 0.05, b: 0.05, a: 0}
     - _interior_position: {r: 3.69, g: 0.26, b: 7.64, a: 0}
   m_BuildTextureStacks: []

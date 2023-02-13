@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material Ghost shader
-  m_Shader: {fileID: -6465566751694194690, guid: f0620589fc6800648a5e8d817a2fe070,
+  m_Name: Cloud_Material
+  m_Shader: {fileID: -6465566751694194690, guid: 0df8032c007d977408d40e96d188ceaa,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -35,29 +35,26 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FloatingDistance: 1
-    - _FresnelMultiplier: 1.76
-    - _Interior_subtract: 1.08
-    - _Position_multiplier: 7.7
+    - _Base_scale: 0.1
+    - _Base_speed: 0.2
+    - _Base_strenght: 0.79
+    - _Curvature_radius: 32.66
+    - _Emission_multiplier: -0.4
+    - _Fresnel_Multiplier: 0.52
+    - _Fresnel_power: 1
+    - _Noise_Heigh: 1.5
+    - _Noise_Scale: 0.2
+    - _Power_Factor: 0.7
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Wobble_distance: 0.5
-    - _Wobble_frenquency: 5
-    - _Wobble_strenght: 10
-    - _floatingFrequency: 6.66
-    - _floatingValue: 39.6
-    - _interiorMultiplier: 4.75
+    - _Speed: 1
     m_Colors:
-    - _Border_color: {r: 0.45047, g: 1.8829645, b: 1.5676355, a: 0}
-    - _FResnelColor: {r: 0, g: 1.319508, b: 1.0866536, a: 0}
-    - _FloatinfLerp: {r: 0.03, g: 0.03, b: 0.03, a: 0}
-    - _Interior_colo: {r: 0.0017331049, g: 0.04263438, b: 0.03847493, a: 0}
-    - _Interior_color: {r: 0, g: 0.57062274, b: 0.54684675, a: 1}
-    - _Interior_position: {r: 0, g: 0.7, b: 0, a: 0}
-    - _Lerp_value: {r: 0.05, g: 0.05, b: 0.05, a: 0}
-    - _interior_position: {r: 3.69, g: 0.26, b: 7.64, a: 0}
+    - _Color_From: {r: 0.046570867, g: 0.11642717, b: 0.119014435, a: 0}
+    - _Color_To: {r: 0.49416864, g: 0.49416864, b: 0.49416864, a: 0}
+    - _Remap_Values: {r: -0.5, g: 1, b: -1, a: 1}
+    - _Rotate_V4: {r: 1, g: 0, b: 0, a: 90}
   m_BuildTextureStacks: []
---- !u!114 &3463860930515116081
+--- !u!114 &4338883375932296387
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
